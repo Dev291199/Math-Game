@@ -1,0 +1,167 @@
+html{
+    background: radial-gradient(circle, #fff, #ccc);
+    height: 100px;
+}
+#container{
+    height: 450px;
+    width: 550px;
+    background-color: #b8ddef;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 10px #939697;
+    position: relative;
+}
+#score{
+    background-color: rgb(250, 244, 216);
+    color: black;
+    padding: 10px;
+    position: absolute;
+    left: 480px;
+    box-shadow: 2px 2px 1px rgb(152, 152, 149);
+    -webkit-box-shadow: 2px 2px 1px rgb(152, 152, 149);
+    -moz-box-shadow: 2px 2px 1px rgb(152, 152, 149);
+
+}
+#correct{
+    background-color: rgb(10, 198, 10);
+    color: whitesmoke;
+    padding: 10px;
+    position: absolute;
+    left: 250px;
+    box-shadow: 2px 2px 1px rgb(83, 114, 83);
+    -webkit-box-shadow: 2px 2px 1px rgb(83, 114, 83);
+    -moz-box-shadow: 2px 2px 1px rgb(83, 114, 83);
+    display: none;
+}
+#wrong{
+    background-color: rgb(253, 0, 0);
+    color: whitesmoke;
+    padding: 10px;
+    position: absolute;
+    left: 250px;
+    box-shadow: 2px 2px 1px rgb(83, 114, 83);
+    -webkit-box-shadow: 2px 2px 1px rgb(83, 114, 83);
+    -moz-box-shadow: 2px 2px 1px rgb(83, 114, 83);
+    display: none;
+}
+#question{
+    height: 130px;
+    width: 450px;
+    background-color: rgb(239, 245, 250);
+    margin: 65px auto 10px auto;
+    box-shadow: 4px 4px 4px rgb(159, 161, 163);
+    -webkit-box-shadow: 4px 4px 2px rgb(159, 161, 163);
+    -moz-box-shadow: 4px 4px 2px rgb(159, 161, 163);
+    border-radius: 4px;
+    font-size: 80px;
+    text-align: center;
+    font-family: cursive,sans-serif;
+}
+#instruction{
+    height: 50px;
+    width: 450px;
+    background-color: rgb(211, 231, 247);
+    margin: 20px auto;
+    box-shadow: 4px 4px 4px rgb(159, 161, 163);
+    -webkit-box-shadow: 4px 4px 2px rgb(159, 161, 163);
+    -moz-box-shadow: 4px 4px 2px rgb(159, 161, 163);
+    border-radius: 4px;
+    text-align: center;
+    line-height: 50px;
+}
+#choices{
+    height: 100px;
+    width: 450px;
+    margin: 5px auto;
+}
+.box{
+    height: 85px;
+    width: 85px;
+    background-color: white;
+    float: left;
+    margin-right: 36px;
+    box-shadow: 3px 3px 4px rgb(159, 161, 163);
+    -webkit-box-shadow: 3px 3px 2px rgb(159, 161, 163);
+    -moz-box-shadow: 3px 3px 2px rgb(159, 161, 163);
+    cursor: pointer;
+    text-align: center;
+    line-height: 80px;
+    font-size: 40px;
+    position:relative;
+    transition:all 0.2; 
+    -webkit-transition:all 0.2;
+    -moz-transition:all 0.2;
+    -o-transition:all 0.2;
+    -ms-transition:all 0.2;
+}
+.box:hover{
+    background-color: rgb(129, 193, 246);
+    color: white;
+}
+.box:active{
+    top: 4px;
+    box-shadow: none;
+}
+#box4{
+    margin-right: 0px;
+}
+#startreset{
+    height: 35px;
+    width: 120px;
+    background-color: rgb(246, 236, 191);
+    border-radius: 2px;
+    left: 210px;
+    margin-right: 36px;
+    padding: 8px;
+    margin-top: 5px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 35px;
+    font-size: 20px;
+    position:relative;
+    transition:all 0.2; 
+    -webkit-transition:all 0.2;
+    -moz-transition:all 0.2;
+    -o-transition:all 0.2;
+    -ms-transition:all 0.2;
+    box-shadow: 3px 3px 4px rgb(159, 161, 163);
+    -webkit-box-shadow: 3px 3px 2px rgb(159, 161, 163);
+    -moz-box-shadow: 3px 3px 2px rgb(159, 161, 163);
+}
+#startreset:hover{
+    background-color: rgb(246, 223, 122);
+    color: #737f85;
+}
+#startreset:active{
+    top: 4px;
+    box-shadow: none;
+}
+#timeremaining{
+    width: 143px;
+    padding: 8px;
+    position: absolute;
+    top: 420px;
+    left: 421px;
+    background-color: rgb(68, 241, 68);
+    color: black;
+    font-size: 15px;
+    border-radius: 2px;
+    box-shadow: 3px 3px 4px rgb(159, 161, 163);
+    display: none;
+}
+#gameOver{
+    height: 200px;
+    width: 500px;
+    background: linear-gradient(#F3CA6B,#F3706C);
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 110px;
+    left: 45px;
+    box-shadow: 5px 5px 5px rgb(159, 161, 163);
+    z-index: 2;
+    display: none;
+}
